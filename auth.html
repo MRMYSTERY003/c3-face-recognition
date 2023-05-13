@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Recognition</title>
+    <script defer src="face-api.min.js"></script>
+    <script defer src="auth.js"></script>
+
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+
+    <div id="cont">
+        <button id="start-camera">Start Camera</button>
+        <button id = 'stop'>Stop</button>
+        <video id="video" width="320" height="240" autoplay></video>
+        <button id="click-photo">Verify</button>
+        <canvas id="canvas" width="320" height="240"></canvas>
+    </div>
+
+    <div class="ring" id = 'load'>Loading
+        <span></span>
+    </div>
+
+    <h3 id = 'res' style="color:white"></h3>
+
+</body>
+</html>
